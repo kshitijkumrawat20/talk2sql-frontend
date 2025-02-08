@@ -29,8 +29,7 @@ function ConnectionPage() {
 
     try {
       const response = await axios.post('/setup-connection', {
-        connection_string: formData.connectionString,
-        db_type: formData.dbType
+        connection_string: formData.connectionString
       });
       
       console.log('Server response:', response.data);
